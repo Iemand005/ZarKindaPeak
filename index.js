@@ -1,5 +1,5 @@
-const bdayMonth = 5;  // e.g. June = 5
-const bdayDay = 15;
+const bdayMonth = 9;
+const bdayDay = 16;
 
 function getNextBirthday() {
   const now = new Date();

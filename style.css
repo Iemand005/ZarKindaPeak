@@ -1,10 +1,16 @@
+html, body {
+	height: 100%;
+}
+
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	background-color: black;
 	color: lightblue;
 
 	background-image: url(Minecraft.png);
-	background-;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 h1 {

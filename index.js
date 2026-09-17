@@ -1,9 +1,9 @@
-const bdayMonth = 8;
+const bdayMonth = 9;
 const bdayDay = 16;
 
 function getNextBirthday() {
   const now = new Date();
-  let next = new Date(now.getFullYear(), bdayMonth, bdayDay);
+  let next = new Date(now.getFullYear(), bdayMonth - 1, bdayDay);
   if (next < now) next.setFullYear(next.getFullYear() + 1);
   return next;
 }

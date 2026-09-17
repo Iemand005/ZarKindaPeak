@@ -17,6 +17,12 @@ body {
 	margin: 10px;
 }
 
+main {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 section {
 	background-color: rgba(255, 255, 255, 0.125);
 	backdrop-filter: blur(10px);

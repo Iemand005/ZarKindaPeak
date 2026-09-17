@@ -22,7 +22,7 @@ main {
     flex-direction: column;
     align-items: center;
 
-	    height: 100%;
+	height: 100%;
     justify-content: space-between;
 }
 
@@ -30,6 +30,9 @@ section {
 	background-color: rgba(255, 255, 255, 0.125);
 	backdrop-filter: blur(10px);
 	padding: 20px;
+}
+
+section, iframe {
 	border-radius: 10px;
 }
 

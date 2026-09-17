@@ -8,8 +8,24 @@ function getNextBirthday() {
 	return next;
 }
 
+function pad(n) {
+	return String(n).padStart(2, "0");
+}
+
 function updateCountdown() {
-	document.querySelector("time").dateTime = getNextBirthday().toISOString();
+	const target = getNextBirthday();
+	const diff = Math.max(0, target.getTime() - Date.now());
+	const totalSeconds = Math.floor(diff / 1000);
+
+	const d = Math.floor(totalSeconds / 86400);
+	const h = Math.floor((totalSeconds % 86400) / 3600);
+	const m = Math.floor((totalSeconds % 3600) / 60);
+	const s = totalSeconds % 60;
+
+	document.querySelector("time").setAttribute(
+		"value",
+		`${pad(d)}:${pad(h)}:${pad(m)}:${pad(s)}`
+	);
 }
 
 setInterval(updateCountdown, 1000);

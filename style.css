@@ -4,6 +4,10 @@ body {
 	color: lightblue;
 }
 
+h1 {
+	text-align: center;
+}
+
 .password {
 	display: none;
 }

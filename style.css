@@ -7,3 +7,8 @@ body {
 .password {
 	display: none;
 }
+
+iframe {
+	width: 100%;
+	height: 50%;
+}

@@ -17,7 +17,7 @@ function updateCountdown() {
   // const m = Math.floor((diff / (1000 * 60)) % 60);
   // const s = Math.floor((diff / 1000) % 60);
 
-  document.querySelector("time").dateTime = diff.toISOString();
+  document.querySelector("time").dateTime = new Date(diff).toISOString();
 }
 
 setInterval(updateCountdown, 1000);

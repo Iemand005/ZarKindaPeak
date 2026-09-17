@@ -21,18 +21,18 @@ main {
 	display: flex;
     flex-direction: column;
     align-items: center;
-	padding: 20px;
 }
 
 section {
 	background-color: rgba(255, 255, 255, 0.125);
 	backdrop-filter: blur(10px);
-	padding: 10px;
+	padding: 20px;
 	border-radius: 10px;
 }
 
 h1 {
 	text-align: center;
+	margin: 0;
 }
 
 time {

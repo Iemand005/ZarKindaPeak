@@ -12,13 +12,12 @@ function updateCountdown() {
   const now = new Date();
   const diff = getNextBirthday() - now;
 
-  const d = Math.floor(diff / (1000 * 60 * 60 * 24));
-  const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
-  const m = Math.floor((diff / (1000 * 60)) % 60);
-  const s = Math.floor((diff / 1000) % 60);
+  // const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+  // const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+  // const m = Math.floor((diff / (1000 * 60)) % 60);
+  // const s = Math.floor((diff / 1000) % 60);
 
-  document.querySelector("time").textContent =
-    `${d}d ${h}h ${m}m ${s}s`;
+  document.querySelector("time").dateTime = diff;
 }
 
 setInterval(updateCountdown, 1000);

@@ -9,7 +9,7 @@ function getNextBirthday() {
 }
 
 function updateCountdown() {
-	el.dateTime = getNextBirthday().toISOString();
+	document.querySelector("time").dateTime = getNextBirthday().toISOString();
 }
 
 setInterval(updateCountdown, 1000);

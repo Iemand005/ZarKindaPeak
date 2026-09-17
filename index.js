@@ -1,4 +1,4 @@
-const bdayMonth = 9;
+const bdayMonth = 8;
 const bdayDay = 16;
 
 function getNextBirthday() {
